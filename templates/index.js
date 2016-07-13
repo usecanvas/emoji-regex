@@ -1,3 +1,3 @@
 module.exports = function() {
-	return /<%= multipleCodePointsPart %>|<%= loneCodePointsPart %>/g;
+	return /^(<%= multipleCodePointsPart %>|<%= loneCodePointsPart %>){1,3}$/gm;
 };
